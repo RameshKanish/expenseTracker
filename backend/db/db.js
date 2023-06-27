@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
 
-const db = async ()=>{
-    try{
-        mongoose.set('strictQuery',false)
-        await mongoose.connect(process.env.MANGO_URL);
-        console.log("Db connected");
-    }catch(error){
-        console.log('db connecton error',error);
+const db = async () => {
+
+    try {
+        await mongoose.connect(process.env.MANGO_URL, {
+            useUnifiedTopology: true, 
+            useNewUrlParser: true,
+        });
+        console.log("db connected");
+    } catch (error) {
+        console.error(error);
+        console.error("Error in dbConfig.js");
     }
+
 }
 module.exports={db};
