@@ -63,13 +63,13 @@ import History from "../../History/History";
                     border-radius: 20px;
                     padding: 1rem;
                     p{
-                        font-size: 3.5rem;
+                        font-size: 2.0rem;
                         font-weight: 700;
                     }
                 }
 
                 .balance{
-                    grid-column: 2 / 4;
+                    grid-column:  2/ 4;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -77,7 +77,7 @@ import History from "../../History/History";
                     p{
                         color: var(--color-green);
                         opacity: 0.6;
-                        font-size: 4.5rem;
+                        font-size: 2.0rem;
                     }
                 }
             }

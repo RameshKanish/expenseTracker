@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import axios from 'axios'
-let BASE_URL = "http://localhost:5000/api/v1/";
+let BASE_URL = "https://ramesh-expense-tracker-backend.onrender.com/api/v1/";
 const GlobalContext = React.createContext()
 
 
