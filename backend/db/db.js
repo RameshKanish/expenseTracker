@@ -4,7 +4,7 @@ const db = async () => {
 
     try {
         await mongoose.connect(process.env.MANGO_URL, {
-            useUnifiedTopology: true, 
+            useUnifiedTopology: false, 
             useNewUrlParser: true,
         });
         console.log("db connected");
